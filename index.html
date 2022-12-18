@@ -10,10 +10,15 @@
       background-color: #eee;
     }
     .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+		display: flex;
+	}
+	.profile-picture-container {
+  		flex: 0 0 50%;
+  		text-align: center;
+	}
+	.profile-info {
+	 	flex: 1;
+	}
     .header {
       position: fixed;
       top: 0;
@@ -58,12 +63,16 @@
 </head>
 <body>
   <div class="container">
-  	<h1>Hi, my name is Corentin!</h1>
-  	<img src="isu_cerem.jpg" alt="Corentin's Profile Picture" class="profile-picture">
+  <div class="profile-picture-container">
+    <img src="isu_cerem.jpg" alt="Corentin's Profile Picture" class="profile-picture">
+  </div>
+  <div class="profile-info">
+    <h1>Hi, my name is Corentin!</h1>
     <p>I am a Spacecraft Controller and I have been working in this field for almost a year.</p>
     <p>I am originally from France and I currently live in Germany.</p>
     <p>Here is my Mastodon link: <a rel="me" href="https://mastodon.social/@Dakta">Mastodon</a></p>
     <p>Thank you for visiting my simple website.</p>
   </div>
+</div>
 </body>
 </html>
